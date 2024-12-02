@@ -7,5 +7,5 @@ Route::get('/', function () {
 });
 
 Route::get('/films', function () {
-    return 'Hier vind je alle films';
+    return 'Hier vind je alle beschikbare films';
 });
