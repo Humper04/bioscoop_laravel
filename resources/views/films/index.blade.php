@@ -3,6 +3,10 @@
 @section('title', 'Films Overzicht')
 
 @section('content')
-    <h1>Films in onze bioscoop</h1>
-    <p>Bekijk hieronder de films die momenteel draaien.</p>
+    <h1>Films</h1>
+    <ul>
+        @foreach($films as $film)
+        <li><a href="/films/{{ $film->id }}">{{ $film->title }}</a></li>
+        @endforeach
+    </ul>
 @endsection
