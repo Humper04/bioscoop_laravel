@@ -1,0 +1,1 @@
+screen -dmS "Laravel server" php artisan serve
